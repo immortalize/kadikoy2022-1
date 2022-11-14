@@ -8,13 +8,13 @@
 <h1>HELLO WORLD</h1>
 <p>İsmin ne?</p>
 
- <input type="text" id="ad" name="ad" value="isminizi giriniz"><br>
+ <input type="text" id="ad" name="ad" placeholder="isminizi giriniz"><br>
 <p>Soy ismin ne?</p>
  
-  <input type="text" id="ad" name="ad" value="Soy isminizi giriniz"><br><br>
+  <input type="text" id="ad" name="ad" placeholder="Soy isminizi giriniz"><br><br>
 <p>kaç yaşındasın?</p>
-<input type="text" id="yaş" value="yaşınızı giriniz"><br>
+<input type="text" id="yaş" placeholder="yaşınızı giriniz"><br>
 <p>Nerede yaşıyorsun?</p>
-<input type="text" id="şehir" value="yaşadığınız şehri giriniz"><br>
+<input type="text" id="şehir" placeholder="yaşadığınız şehri giriniz"><br>
 </body>
 </html>
