@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>ÖN KAYIT</title>
+</head>
+<body>
+
+<h1>HELLO WORLD</h1>
+<p>İsmin ne?</p>
+
+ <input type="text" id="ad" name="ad" value="isminizi giriniz"><br>
+<p>Soy ismin ne?</p>
+ 
+  <input type="text" id="ad" name="ad" value="Soy isminizi giriniz"><br><br>
+<p>kaç yaşındasın?</p>
+<input type="text" id="yaş" value="yaşınızı giriniz"><br>
+<p>Nerede yaşıyorsun?</p>
+<input type="text" id="şehir" value="yaşadığınız şehri giriniz"><br>
+</body>
+</html>
