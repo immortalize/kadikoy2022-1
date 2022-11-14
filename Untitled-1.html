@@ -1,11 +1,25 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Page Title</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
 <body>
-
-<P>MERHABA DUNYA</P>
-
+    <form action="#">
+            isim:<input onkeyup="myFunction()" id="input_text" type="text" placeholder="ismini gir"></form>
+            
+		<p>MERHABA<span id="name_write"></span></p>
+	<script>
+            function myFunction(){
+            var get_value = document.getElementById("input_text").value;
+            var write_id = document.getElementById("name_write").innerHTML = get_value;
+                
+			
+			
+		}		
+	</script>
+    
 </body>
 </html>
