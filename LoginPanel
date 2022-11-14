@@ -5,9 +5,9 @@
 
 <form action="/action_page.php">
   <label for="ad">Adınız:</label><br>
-  <input type="text" id="ad" name="ad" value="Adınız"><br>
+  <input type="text" id="ad" placeholder="ad" value="Adınız"><br>
   <label for="soyad">Soyadınız:</label><br>
-  <input type="text" id="ad" name="ad" value="Soyadınız"><br><br>
+  <input type="text" id="ad" name="ad" placeholder="Soyadınız"><br><br>
   <input type="submit" value="Gönder">
 </form> 
 
