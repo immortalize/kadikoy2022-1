@@ -1,0 +1,13 @@
+#navigasyon, #alt {
+    width: 100%;
+    background-color: darkcyan;
+}
+
+#orta {
+    width: "60%";
+    align="center";
+}
+
+table{
+    border: none;
+}
