@@ -1,14 +1,30 @@
 ﻿<html>
 <head>   
     <title>başlık</title>
+
 </head>
 <body>
     <h2>
         JavaScript Yazıyorum!
     </h2>
     <p id="paragraf1">JavaScript ile neler yapabiliriz?</p>
+    <p id="demo"></p>
+    <!-- fonk çağıdan button -->
+    <button type="button" onclick="fonk()">fonk button</button>
     <!--buraya bir button ekleyelim-->
     <button type="button" onclick="document.getElementById('paragraf1').innerHTML='' ">Bana tıkla</button>
     <button type="button" onclick="document.getElementById('paragraf1').innerHTML='JavaScript ile neler yapabiliriz?' ">Geri Getir</button>
+
+    <br>
+    <script>
+        document.write("merhaba");
+        document.write(5+7);
+        document.getElementById('demo').innerHTML="merhaba JS";
+        window.alert("merhaba dünya");
+        window.alert(10+20);
+        console.log("konsol için bir mesajım var.");
+    </script>
+
+    <script src="fonk.js" > </script>
 </body>
 </html>

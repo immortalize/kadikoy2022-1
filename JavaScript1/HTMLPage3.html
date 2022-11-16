@@ -1,0 +1,27 @@
+<html>
+<head>   
+    <title>başlık</title>
+</head>
+<body>
+    <h2>
+        JavaScript Yazıyorum!
+    </h2>
+    <p id="no1">JavaScript ile neler yapabiliriz?</p>
+    <p id="no2">bu da ikinci paragraf</p>
+
+    <button id="tus1" class="tus" style="color:red ; width: 50%; height:30%"
+        type="button" 
+        onclick="
+        document.getElementById('no1')
+            .innerHTML='...' "
+    >Bana tıkla</button>
+    <br>
+
+    <button id="tus2" type="button" 
+        onclick="document.getElementsByClassName('tus').style.visibility='hidden' ">gizle</button>
+
+    <button id="tus3"  type="button" 
+        onclick="document.getElementById('tus').style.display='inline' ">goster</button>
+
+</body>
+</html>
