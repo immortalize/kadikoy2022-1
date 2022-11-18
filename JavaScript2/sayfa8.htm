@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title>baslik</title>
+    </head>
+    <body>
+        
+        <script>
+            const gezegenler = new Array("mars","dünya","jupiter","merkür");
+            gezegenler.push("güneş");
+//          gezegenler.pop();
+            gezegenler.shif .shift();
+            gezegenler.unshift("samanyolu");
+            gezegenler[0] = "galaksi";
+            document.write(gezegenler.length);
+            document.write("<br>");
+            /* aşağıdaki kod bloğu, döngünün yaptığı işi yapıyor.
+            document.write("<br>");
+            document.write(gezegenler[0]);
+            document.write("<br>");
+            document.write(gezegenler[1]);
+            document.write("<br>");
+            document.write(gezegenler[2]);
+            document.write("<br>");
+            document.write(gezegenler[3]);
+            document.write("<br>");
+            */
+/*
+                     0     3
+                     1     3
+                     2     3
+                     3     3
+*/
+            for(i=0; i<gezegenler.length; i++)
+            {
+                document.write(gezegenler[i]);
+                document.write("<br>");
+            }
+
+
+
+
+        </script>
+    </body>
+</html>
