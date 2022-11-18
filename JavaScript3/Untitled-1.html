@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 
+    <title>Document</title>
+</head>
+<body>
+    <input placeholder="Sayıyı Girin" type="text" id="txtSayi">
+    <button id="btn">HESAPLA</button>
+    <div id="sonuc"></div>
+    <script>
+ 
+       
+        function name() {
+            let x= "açık"
+            let puan= Number(document.getElementById("txtSayi").value);
+           
+ 
+            if(puan==0 )
+                {
+                    document.getElementById("sonuc").innerHTML="Kapalı";
+            } else if (puan==1)
+                {
+                    document.getElementById("sonuc").innerHTML="açık";
+            } else{
+                document.getElementById("sonuc").innerHTML="Değer bulunamadı";
+            }
+        }
+        var hesapBtn=document.getElementById("btn");
+        hesapBtn.onclick=name;
+    </script>
+   
+</body>
+</html>
+
