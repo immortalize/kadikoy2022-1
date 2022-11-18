@@ -1,0 +1,31 @@
+<html>
+    <body>
+        <h2>Sayfa2'ye hoşgeldiniz.</h2>
+        <script>
+            let day =  new Date().getDay() ;
+            let gun;
+            day = 10;
+            document.write( day );
+            switch(day) {
+                case 0: gun = "pazar";
+                break;
+                case 1: gun = "pazartesi";
+                break;
+                case 2: gun = "salı";
+                break;
+                case 3: gun = "çarşamba";
+                break;
+                case 4: gun = "perşembe";
+                break;
+                case 5: gun = "cuma";
+                break;
+                case 6: gun = "cumartesi";
+                break;
+                default: gun = "hatalı gün";
+            }
+            
+            document.write( gun );
+
+        </script>
+    </body>
+</html>

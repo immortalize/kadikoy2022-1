@@ -1,0 +1,25 @@
+<html>
+    <body>
+        <h2>Sayfa2'ye hoşgeldiniz.</h2>
+        <script>
+            let day =  new Date().getDay() ;
+            document.write( day );
+
+            if(day==5){
+                document.write( " bugün cuma" );
+            } else if (day==6) {
+                document.write( " günlerden cumartesi" );
+            } else if (day==0) {
+                document.write( " günlerden pazar" );
+            } else if (day==1) {
+                document.write( " günlerden pazartesi" );
+            } else if (day==2) {
+                document.write( " günlerden salı" );
+            } else if (day==3) {
+                document.write( " günlerden çarşamba" );
+            } else if (day==4) {
+                document.write( " günlerden perşembe" );
+            } 
+        </script>
+    </body>
+</html>

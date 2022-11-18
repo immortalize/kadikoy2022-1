@@ -1,0 +1,23 @@
+<html>
+    <body>
+        <script>
+            let day =  new Date().getDay() ;
+            let gun;
+
+            document.write( day );
+            switch(day) {
+                case 1:
+                case 2:
+                case 3:
+                case 4:
+                case 5: gun = " haftaiçi";
+                break;
+                case 0:
+                case 6: gun = " haftasonu";
+            }
+            
+            document.write( gun );
+
+        </script>
+    </body>
+</html>
