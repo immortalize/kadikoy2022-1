@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        #sonuc {
+          position: absolute;
+          /* padding: auto; */
+          top: 176px;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 100px;
+          font-weight: 900;
+          margin-bottom: 25px;
+        }
+        #buton {
+          width: 100%;
+          /* height: 100%; */
+          /* display: flex; */
+          /* align-items: center; */
+          /* justify-content: center; */
+          font-size: 25px;
+          font-weight: 900;
+          margin-top: 25px;
+        }
+   
+        #metin {
+          width: 100%;
+          height: 100px;
+   
+          /* display: flex; */
+          align-items: flex-start;
+          border: 15px;
+          /* justify-content: center; */
+          font-size: 25px;
+          font-weight: 900;
+          text-align: center;
+        }
+      </style>
+</head>
+<body>
+    <input type="text" placeholder="1 ile 100 Arasında Bir Sayı Giriniz" id="metin" />
+    <br />
+    <input type="button" id="buton" value="TIKLA VE Kontrol et" />
+    <div id="sonuc"></div>
+   
+    <script>
+        function kontrol() {
+ 
+           
+          let deger = document.getElementById("metin").value;
+   
+          if (deger >=1 &&  deger <=100 ) {
+           
+            document.getElementById("sonuc").innerHTML = "Sayınız:" + deger + " ve 1-100 arasındadır" ;
+          }
+          else {
+            document.getElementById("sonuc").innerHTML = "Dikkat! Sayınız 1-100 arasında değildir" ;
+          }
+        }
+
+        let hbuton = document.getElementById("buton");
+        hbuton.onclick = kontrol;
+      </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>faktoriyel</title>
+    </head>
+    <body>
+        <h1>Javascript Faktöriyel Hesaplama</h1>
+        <input type="text" id="1" placeholder="sayı giriiniz">
+        <button id="2">Hesapla</button>
+        <div id="sonuc"></div>
+           <script>
+            function hesapla(){
+            var faktoriyel=1;
+            var sayi=document.getElementById("1").value;
+            sayi=Number(sayi);
+            if(sayi>=0){
+            //sayı=1, faktoriyel=1*1
+            //sayı=2, faktoriyel=1*2
+                for(var i=1;i<=sayi;i++){
+                    //document.write(i + "<br>");
+                    faktoriyel=faktoriyel*i;
+                    document.getElementById("sonuc").innerHTML +=("i=" + i + " faktoriyel= " + faktoriyel + "<br>");
+                }
+            }
+        document.getElementById("sonuc").innerHTML += sayi+"'sayısının "+"faktoriyeli= "+ faktoriyel;
+    }
+
+    var hesaplaBtn=document.getElementById("2");
+    hesaplaBtn.onclick=hesapla;
+           </script>
+    </body>
+    
+</html>

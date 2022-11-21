@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>Faktoriyel Hesaplama</title>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <td> Lütfen bir sayı giriniz</td>
+                <td> <input type="text" id="sayiInput"/> </td>
+                <td> <input type="button" value="HESAPLA" onclick="Hesapla()"/></td>
+
+            </tr>
+            <tr>
+                <td> sonuç:</td>
+                <td colspan="2"> <span id="sonuçspan"></span></td>
+            </tr>
+        </table>
+        <script>
+            function Hesapla(){
+                var sayi;
+                var sonuç=1;
+                sayi=document.getElementById("sayiInput").value;
+                for(let index = 1; index <=sayi; index++){
+                    sonuç=sonuç*index;
+                }
+                document.getElementById("sonuçspan").innerHTML=sonuç;
+            }
+            
+        </script>
+    </body>
+</html>

@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title> Kontrol </title>      
+    </head>
+    <body>      
+        <script>      
+            let sayi = prompt("1 ile 100 arasında bir sayı giriniz.");
+            let faktoriyel = 1;
+           
+             if(sayi < 1) {
+                document.write("1 ile 100 demiştim :( ")
+                }
+             else if (sayi > 100){
+                 document.write("100 ile 1 arasında :( ")
+             }
+             else {
+                 for(i = 1; i <= sayi; i++) {
+                 faktoriyel = faktoriyel * i;
+             }
+                 document.write("Faktöriyel: " + faktoriyel);
+             }    
+             
+        </script>                    
+    </body>
+</html>

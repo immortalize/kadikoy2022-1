@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bir Sayının Faktöriyelini Hesaplama</title>
+</head>
+<body>    
+ 
+    <script>
+    
+        let sayi = prompt("Lütfen bir sayı giriniz.");
+    
+        let faktoriyel = 1;
+    
+        if(sayi < 0) {document.write("Lütfen pozitif bir tamsayı giriniz!")}
+        
+        	else { for(i = 1; i <= sayi; i++)
+                        {
+                			faktoriyel = faktoriyel * i;
+            			}
+           				 document.write("Faktöriyel : " + faktoriyel);
+      				}
+   
+    </script>
+</body>
+</html>
+ 

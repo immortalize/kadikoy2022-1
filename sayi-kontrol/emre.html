@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>girdi</title>
+    </head>
+    <body>
+        <input placeholder="Sayıyı Girin" type="text" id="txtSayi">
+        <button id="btn">HESAPLA</button>
+        <div id="sonuc"></div>
+        
+        <script>
+            function name() {
+                let x= "açık"
+                let puan= Number(document.getElementById("txtSayi").value);
+
+                if(puan>0 , puan<100 )
+                {
+                    document.getElementById("sonuc").innerHTML="Doğru";
+                } else if (puan>100 , puan<0)
+                {
+                    document.getElementById("sonuc").innerHTML="Yanlış";
+            
+                } else{
+                    document.getElementById("sonuc").innerHTML="Yanlış";
+                }   
+            }
+            var hesapBtn=document.getElementById("btn");
+            hesapBtn.onclick=name;
+        </script>
+    </body>
+</html>

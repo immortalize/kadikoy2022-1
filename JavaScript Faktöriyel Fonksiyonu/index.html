@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body><script>
+
+// faktöriyel(1)= 1 
+// faktöriyel(2)= 2
+// faktöriyel(3)= 6
+    function faktoriyel(sayi) {
+        if (sayi <= 1) {
+              return 1;
+        }
+        else {
+            return (sayi * faktoriyel(sayi - 1));
+        }
+      }
+      document.write(faktoriyel(1));
+</script>
+</body>
+</html>
