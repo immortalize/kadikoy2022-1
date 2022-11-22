@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" src="style.css">
+</head>
+<style>
+    body{
+        background-color: rebeccapurple;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+    }
+    .container{
+        width: 400px;
+        height: 650px;
+        background-color: aliceblue;
+        border-radius: 2%;
+        margin: 20px;
+        padding-left: 50px;
+        padding-top: 50px;        
+    }
+    #final{
+        margin-top: 250px;
+        width:310px;
+        height:50px;
+        background-color: rebeccapurple;
+        border-radius: 2%;
+      }
+      #fname{
+        height: 30px;
+        width: 300px;
+        border-radius:10px;
+      }
+      #lname{
+        height: 30px;
+        width: 300px;
+        border-radius:10px;
+      }
+      #fnumber{
+        height: 30px;
+        width: 300px;
+        border-radius:10px;
+      }
+</style>
+<body>
+    <form>
+        <div class="container">
+            <form action="/action_page.php">
+                <label for="fname">First name:</label><br><br>
+                <input type="text" id="fname" name="fname" ><br><br>
+                <label for="lname">Last name:</label><br><br>
+                <input type="text" id="lname" name="lname" ><br><br>
+                <label for="fname">Number:</label><br><br>
+                <input type="number" id="fnumber" name="fnumber" ><br><br>
+                
+                <input id="final" type="submit" value="Submit">
+              </form>
+       
+
+    </div>
+    </form>
+</body>
+</html>

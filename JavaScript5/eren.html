@@ -1,0 +1,71 @@
+<html>
+    <head>
+        <title>Telefon Rehberi</title>        
+    </head>
+    <body>
+        <table>
+            <tr>
+                <td>TC. No:</td>
+                <td><input type="number" id="tc" value=""></td>
+            </tr>
+            <tr>
+                <td>Adı:</td>
+                <td><input type="text" id="ad" value=""></td>
+            </tr>
+            <tr>
+                <td>Soyadı:</td>
+                <td><input type="text" id="soyad" value=""></td>
+            </tr>
+            <tr>
+                <td>Telefon No:</td>
+                <td><input type="number" id="tel" value=""></td>
+            </tr>
+        </table></br>
+        <button id="kaydet">Kaydet</button></br></br>
+        <table>
+            <tr>
+                <td>
+                    TC. No:
+                </td>
+                <td>
+                    Adı:
+                </td>  
+                <td>
+                    Soyadı:
+                </td>  
+                <td>
+                    Telefon No:
+                </td>               
+            </tr>
+            <tr>
+                <td>
+                    <textarea id="area1" value="" rows="1" cols="10"></textarea>
+                </td>
+                <td>
+                    <textarea id="area2" value="" rows="1" cols="10"></textarea>
+                </td>
+                <td>
+                    <textarea id="area3" value="" rows="1" cols="10"></textarea>
+                </td>  
+                <td>
+                    <textarea id="area4" value="" rows="1" cols="10"></textarea>  
+                </td>  
+            </tr>
+        </table>                                                                    
+        <script>                    
+            var btn=document.getElementById("kaydet");
+            btn.onclick=function()
+            {                  
+                var a=document.getElementById("ad");
+                var b=document.getElementById("soyad");
+                var c=document.getElementById("tel");
+                var d=document.getElementById("tc");
+                document.getElementById("area1").value = tc.value; 
+                document.getElementById("area2").value = ad.value;
+                document.getElementById("area3").value = soyad.value;
+                document.getElementById("area4").value = tel.value;             
+                return ;        
+            }      
+        </script>  
+    </body>  
+</html>

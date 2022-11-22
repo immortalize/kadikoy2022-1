@@ -1,0 +1,62 @@
+<html>
+<body>
+    <h2>Telefon Rehberi</h2>
+    <style>
+        table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        }
+    </style>
+
+    <form name="myForm">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value="John"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" value="Doe"><br>
+        <label for="tel">Telefon:</label><br>
+        <input type="text" id="itel" name="tel" value="5557456"><br><br>
+        <input type="button" value="Kaydet" onclick="ekle()">
+        <input type="button" value="Temizle" onclick="temizle()">
+    </form>
+    <p id="paragraf">Kişiyi eklemek için Kaydet tuşuna basın.</p>
+
+    <table id="tablo1" style="border:solid">
+        <tbody id="tb1">
+            <tr>
+                <th>Ad</th>
+                <th>Soyad</th>
+                <th>Telefon</th>
+            </tr>
+            <tr> <!--2. satır-->
+                <td id="ad">Ad</td>
+                <td id="soyad">Soyad</td>
+                <td id="tel">Telefon</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script>
+        function temizle(){
+            //tabloya satır eklemek için
+            //document.getElementById("tb1").innerHTML += '<tr><td id="ad">Ad</td><td id="soyad">Soyad</td><td id="tel">Telefon</td></tr>';
+            document.forms["myForm"]["fname"].value = "";
+            document.forms["myForm"]["lname"].value = "";
+            document.forms["myForm"]["tel"].value = "";
+        }
+        function ekle(){
+            let ad, soyad, tel;
+            ad = document.forms["myForm"]["fname"].value;
+            soyad = document.forms["myForm"]["lname"].value;
+            tel = document.forms["myForm"]["tel"].value;
+
+            //document.getElementById("paragraf").innerHTML = "ad: " + ad + "<br> soyad: " + soyad + "<br> tel: " + tel + "<br>";
+            document.getElementById("ad").innerHTML = ad;
+            document.getElementById("soyad").innerHTML = soyad;
+            document.getElementById("tel").innerHTML = tel;
+            
+
+        }
+        console.log(document.getElementById("tb1").innerHTML);
+    </script>
+</body>
+</html>
