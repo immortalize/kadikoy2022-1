@@ -1,0 +1,47 @@
+<html>
+    <body>
+        <!-- Form Blogu Başlangıç -->
+        <form name="myForm">
+            <label for="marka">Marka:</label><br>
+            <input type="text" id="marka" name="marka" ><br>
+            <label for="model">Model:</label><br>
+            <input type="text" id="model" name="model" ><br>
+            <label for="renk">Renk:</label><br>
+            <input type="text" id="renk" name="renk"><br><br>
+            <input type="button" value="Kaydet" onclick="kayit()">
+            <input type="button" value="Temizle" onclick="temizle()">
+        </form>
+        <!-- Form Blogu Bitiş -->
+        <p id="par"></p>
+        <script>
+            var arabalar = [];
+            function temizle (){
+                document.forms["myForm"]["marka"].value = "";
+                document.forms["myForm"]["model"].value = "";
+                document.forms["myForm"]["renk"].value = "";
+            }
+            function kayit(){
+                // araba objesini form alanlarından doldurup oluştur
+                var araba = {
+                    marka: document.forms["myForm"]["marka"].value,
+                    model: document.forms["myForm"]["model"].value,
+                    renk:  document.forms["myForm"]["renk"].value
+                };
+                arabalar.push(araba);
+                yazdir();
+            }
+            function yazdir(){
+                document.getElementById("par").innerHTML = "";
+                for(i=0; i<arabalar.length; i++)
+                {
+                    document.getElementById("par").innerHTML +=
+                    "Marka:" + arabalar[i].marka 
+                    + " Model:" + arabalar[i].model 
+                    + " Renk: " + arabalar[i].renk 
+                    + "<br><br>";
+                    
+                }
+            }
+        </script>
+    </body>
+</html>

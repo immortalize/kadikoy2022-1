@@ -1,0 +1,60 @@
+<html>
+<body>
+
+<h2>JavaScript Objects</h2>
+
+<p id="demo"></p>
+
+    <table style="border:solid">
+        <tr>
+            <th>Ad</th>
+            <th>Soyad</th>
+            <th>Telefon</th>
+        </tr>
+        <tr> <!--2. satır-->
+            <td id="ad">Ad</td>
+            <td id="soyad">Soyad</td>
+            <td id="tel">Telefon</td>
+        </tr>
+        <tr> <!--3. satır-->
+            <td id="ad2">Ad</td>
+            <td id="soyad2">Soyad</td>
+            <td id="tel2">Telefon</td>
+        </tr>
+    </table>
+    <script>
+        // Create an object:
+        const people = []; //array 
+
+        const person = { //obje
+          firstName: "John",
+          lastName: "Doe",
+          tel: 5557454,
+        };
+
+        people.push(person); //objeyi array'e (listeye) ekledik.
+
+        document.getElementById("demo").innerHTML = person.firstName + " is " + people[0].firstName ;
+        
+        
+        const person2 = { // obje
+          firstName: "Ahmet",
+          lastName: "Yılmaz",
+          tel: 5557454,
+        };
+        people.push(person2); //people bir array.
+
+        // Display some data from the object:
+        document.getElementById("demo").innerHTML += "<br>"+
+        person2.firstName + " is " + people[1].firstName ;
+        
+        document.getElementById("ad").innerHTML = people[0].firstName; //person.firstName;
+        document.getElementById("soyad").innerHTML = people[0].lastName; //person.lastName;
+        document.getElementById("tel").innerHTML = people[0].tel //person.tel;
+
+        document.getElementById("ad2").innerHTML = people[1].firstName; //person.firstName;
+        document.getElementById("soyad2").innerHTML = people[1].lastName; //person.lastName;
+        document.getElementById("tel2").innerHTML = people[1].tel //person.tel;
+    </script>
+</body>
+</html>

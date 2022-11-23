@@ -1,0 +1,109 @@
+<html>
+<body>
+    <h2>Telefon Rehberi</h2>
+    <style>
+        table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        }
+    </style>
+
+    <form name="myForm">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" ><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" ><br>
+        <label for="tel">Telefon:</label><br>
+        <input type="text" id="itel" name="tel"><br><br>
+        <input type="button" value="Kaydet" onclick="ekle()">
+        <input type="button" value="Temizle" onclick="temizle()">
+        <input type="button" value="Satır Ekle" onclick="satirEkle()">
+    </form>
+    <p id="paragraf">Kişiyi eklemek için Kaydet tuşuna basın.</p>
+
+    <table id="tablo1" style="border:solid">
+        <tbody id="tb1">
+            <tr>
+                <th>Id</th>
+                <th>Ad</th>
+                <th>Soyad</th>
+                <th>Telefon</th>
+            </tr>
+            <!-- 2. satır
+            <tr> 
+                <td id="ad">Ad</td>
+                <td id="soyad">Soyad</td>
+                <td id="tel">Telefon</td>
+            </tr>
+            -->
+        </tbody>
+    </table>
+
+    <script>
+        var people = []; //array
+
+        function satirEkle(){
+            const person1 = { //obje
+                firstName: document.forms["myForm"]["fname"].value,
+                lastName: document.forms["myForm"]["lname"].value,
+                tel: document.forms["myForm"]["tel"].value
+            };
+  
+            people.push(person1); //objeyi (person1) array'e (listeye) ekledik.
+/*
+            //tabloya 1. satır eklemek için
+            document.getElementById("tb1").innerHTML += 
+                '<tr><td id="ad">' + people[0].firstName + 
+                '</td><td id="soyad">' + people[0].lastName +
+                '</td><td id="tel">' + people[0].tel +
+                '</td></tr>';
+            //tabloya 2. satır eklemek için
+            document.getElementById("tb1").innerHTML += 
+            '<tr><td id="ad">' + people[1].firstName + 
+                '</td><td id="soyad">' + people[1].lastName +
+                '</td><td id="tel">' + people[1].tel +
+                    '</td></tr>';
+*/
+            tabloyaYazdir(people);
+        }
+        function tabloyaYazdir(people){
+            // tabloyu sil baştan yaz, başlıkları ekle
+            document.getElementById("tb1").innerHTML = "<tr><th>Id</th><th>Ad</th><th>Soyad</th><th>Telefon</th></tr>";
+            for(i=0; i<people.length; i++){
+                //tabloya toplu satır eklemek için
+                document.getElementById("tb1").innerHTML += 
+                '<tr> <td id="id">' + i + 
+                    '</td> <td id="ad">' + people[i].firstName + 
+                    '</td><td id="soyad">' + people[i].lastName +
+                    '</td><td id="tel">' + people[i].tel +
+                        '</td> <td>'+'<input type="button" value="Forma Yazdır" onclick="formaYazdir('+i+')">'+'</td></tr>';
+            }
+        }
+        function formaYazdir(i){
+            document.forms["myForm"]["fname"].value = people[i].firstName;
+            document.forms["myForm"]["lname"].value = people[i].lastName;
+            document.forms["myForm"]["tel"].value = people[i].tel;
+        }
+
+        function temizle(){
+            //tabloya satır eklemek için
+            //document.getElementById("tb1").innerHTML += '<tr><td id="ad">Ad</td><td id="soyad">Soyad</td><td id="tel">Telefon</td></tr>';
+            document.forms["myForm"]["fname"].value = "";
+            document.forms["myForm"]["lname"].value = "";
+            document.forms["myForm"]["tel"].value = "";
+        }
+        function ekle(){
+            let ad, soyad, tel;
+            ad = document.forms["myForm"]["fname"].value;
+            soyad = document.forms["myForm"]["lname"].value;
+            tel = document.forms["myForm"]["tel"].value;
+
+            //document.getElementById("paragraf").innerHTML = "ad: " + ad + "<br> soyad: " + soyad + "<br> tel: " + tel + "<br>";
+            document.getElementById("ad").innerHTML = ad;
+            document.getElementById("soyad").innerHTML = soyad;
+            document.getElementById("tel").innerHTML = tel;
+        }
+        console.log(document.getElementById("tb1").innerHTML);
+    </script>
+</body>
+</html>
