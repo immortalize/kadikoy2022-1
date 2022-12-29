@@ -1,0 +1,44 @@
+OBJELER (veritabanındaki tablolar ve sütunları)
+
+kisi
+|_ tckimlikno (primary key, int 11)
+|_ ad (varchar 100)
+|_ soyad (varchar 100)
+|_ cinsiyet (varchar 1) (E/K)
+|_ dogum_tarihi (date)
+
+iletisim
+|_ tckimlikno (primary key, int 11)
+|_ tur (varchar 3) (ev, is, cep)
+|_ telno (varchar 13)
+
+sigorta
+|_ tckimlikno
+|_ tur (varchar 3)
+|_ bas_tar (date)
+|_ bit_tar (date)
+
+Fonksiyonlar:
+kisi olustur, sil, düzenle, görüntüle (liste, teker - teker, detay görüntüle)
+
+kisinin iletisim bilgilerini, ekle, sil, düzenle, görüntüle
+
+kisinin, sigortalılık bilgilerini ekle, sil, düzenle, görüntüle
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
