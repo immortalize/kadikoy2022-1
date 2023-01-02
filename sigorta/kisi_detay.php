@@ -13,7 +13,7 @@
 </body>
 </html>
 <?php
-$conn = mysqli_connect("localhost", "veri", "1234", "sigorta");
+$conn = mysqli_connect("localhost", "veri", "1234", "sigortadb");
 
 if(!$conn){
     die("Bağlantı kurulurken bir sorun oluştu:" . mysqli_connect_error());

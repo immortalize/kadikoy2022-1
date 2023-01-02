@@ -15,7 +15,7 @@
         <input type="text" placeholder="Ad" name="form-ad" id="ikinci-alan">
         <input type="text" placeholder="Soyad" name="form-soyad">
         <input type="text" placeholder="Cinsiyet" name="form-cinsiyet">
-        <input type="text" placeholder="Doğum Tarihi" name="form-dogum_tarihi">
+        <input type="date" placeholder="Doğum Tarihi" name="form-dogum_tarihi">
         <input type="submit" value="Kaydet">
     </form>
 </body>

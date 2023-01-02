@@ -1,7 +1,7 @@
 OBJELER (veritabanındaki tablolar ve sütunları)
 
 kisi
-|_ tckimlikno (primary key, bigint 11)
+|_ tckimlikno (primary key, int 11)
 |_ ad (varchar 100)
 |_ soyad (varchar 100)
 |_ cinsiyet (varchar 1) (E/K)

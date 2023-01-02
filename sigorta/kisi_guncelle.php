@@ -7,15 +7,17 @@
     <title>Document</title>
 </head>
 <body>
-
+    <a href="kisi_ekle.php">Yeni Kişi</a> | 
+    <a href="kisi_listele.php">Kişi Listesi</a>
+    <br><br>
     <?php
-    $conn = mysqli_connect("localhost", "veri", "1234", "sigorta");
+    $conn = mysqli_connect("localhost", "veri", "1234", "sigortadb");
 
     if(!$conn){
         die("Bağlantı kurulurken bir sorun oluştu:" . mysqli_connect_error());
     }
 
-    $tc = $_GET["tckimlikno"];
+    $tc = $_GET["tc"];
 
     $sql = "select * from kisi where tckimlikno = $tc";
 
