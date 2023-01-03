@@ -10,9 +10,7 @@
     <a href="kisi_ekle.php">Yeni Kişi</a> | 
     <a href="kisi_listele.php">Kişi Listesi</a>
     <br><br>
-</body>
-</html>
-<?php
+ <?php
 $conn = mysqli_connect("localhost", "veri", "1234", "sigortadb");
 
 if(!$conn){
@@ -29,3 +27,7 @@ $row = $result->fetch_assoc();
 echo "TC: ". $row["tckimlikno"] . " Ad: " . $row["ad"] . " Soyad: " . $row["soyad"] . 
      " Cinsiyet: " . $row["cinsiyet"] . " Doğum Tarihi: " . $row["dogum_tarihi"];
 ?>
+<br>
+<a href="telefon_ekle.php?form-tckimlikno=45678986532">Telefon Ekle</a>
+</body>
+</html>

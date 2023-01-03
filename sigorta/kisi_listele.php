@@ -46,7 +46,8 @@
     */
 
     // döngü yazalım:
-
+    if (!$result->num_rows)
+        echo "kayit yok";
     while($row = $result->fetch_assoc()){
         echo "<br>";  
         echo "TC: ". $row["tckimlikno"] . " | ";
